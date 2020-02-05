@@ -1,6 +1,6 @@
 # Journal Club
 
-This repo is built for my B9 project in Oxford. The project is supervised by Professor Alex Lvovsky, and based on a project done before in Berkeley. Details can be seen [here](http://experimentationlab.berkeley.edu/DesignandDocumentationQIE).
+While conducting my B9 research project with Professor Lvovsky, I am also participating in his weekly group meetings. The below are some papers the journal club went through and my brief summaries.
 
 ## Jan 29, 2020: [Quantum convolutional neural networks](https://arxiv.org/pdf/1810.03787.pdf)
 
