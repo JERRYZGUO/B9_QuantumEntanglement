@@ -10,5 +10,9 @@ Made use of quantum circuits. Showed the classification capability of QCNN for q
 
 A quantum circuit is trained to approach the physical system that generates the output state. Clever approach of fixing one qubit state at a time. Generated photons using Spontaneous Parametric Down Conversion.
 
+## Feb 12, 2020: [Quantum Fisher Infromation with Coherence](https://arxiv.org/pdf/1910.10265.pdf)
+
+
+
 
 
