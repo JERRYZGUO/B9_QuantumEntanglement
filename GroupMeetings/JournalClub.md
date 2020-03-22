@@ -10,5 +10,10 @@ Made use of quantum circuits. Showed the classification capability of QCNN for q
 
 A quantum circuit is trained to approach the physical system that generates the output state. Clever approach of fixing one qubit state at a time. Generated photons using Spontaneous Parametric Down Conversion.
 
+## Feb 12, 2020: [Quantum Fisher Infromation with Coherence](https://arxiv.org/pdf/1910.10265.pdf)
 
+## Feb 19, 2020: [Real-time observation of single atoms trapped and interfaced to a nonfiber cavity](https://arxiv.org/pdf/1908.03319.pdf)
+
+## Feb 26, 2020: [Demonstration of interferometer enhancement through EPR entanglement](https://arxiv.org/pdf/1908.09602.pdf)
+Demonstrated that through applying the EPR entangled pulse, the squeezing in momentum/phase quadrant can be adjusted to frequency dependent as desired.
 
