@@ -12,7 +12,9 @@ Professor Mark Beck's [book](https://www.amazon.co.uk/Quantum-Mechanics-Experime
 
 Supervised by Professor Hartmut Haeffner. Included some rough description of the experimental setup and procedure. Also has some useful references pointing to other schools' experiments and papers.
 
-### [Colgate University](http://departments.colgate.edu/physics/research/Photon/root/photon_quantum_mechanics.htm)
+### [Colgate University](https://egalvez.colgate.domains/pql/)
+
+Very comprehensive materials. Even included two videos on alignment. 
 
 ### [University of Rochester](http://www2.optics.rochester.edu/workgroups/lukishova/QuantumOpticsLab/)
 
@@ -34,6 +36,10 @@ A parts [list](http://experimentationlab.berkeley.edu/sites/default/files/images
 
 B.J. Pearson and D.P. Jackson, "A hands-on introduction to single photons and quantum mechanics for undergraduates," [Am. J. Phys. 78(5), 471-484 (2010).](https://pdfs.semanticscholar.org/0907/2f4f1766d0ac73fca15e78b9b8c2b015b935.pdf)
 
+D. Dehlinger and M.W. Mitchell, "Entangled photon apparatus for the undergraduate laboratory" [Am. J. Phys, 70(9),898-902 (2002).](https://www.physics.wisc.edu/undergrads/courses/spring2020/407/experiments/bell/2002_Bell%27s_them_B.pdf)
 
+D. Dehlinger and M.W. Mitchell, "Entangled photons, nonlocality, and Bell inequalities in the undergraduate laboratory", [Am. J. Phys. 70(9),903-910 (2002).](https://arxiv.org/pdf/quant-ph/0205171.pdf)
+
+E. J. Galvez, C. H. Holbrow, and M. J. Pysher, J. W. Martin, N. Courtemanche, L. Heilig, and J. Spencer, "Interference with correlated photons: Five quantum mechanics experiments for undergraduates", [Am. J. Phys. 73,127-140 (2005).](http://qolwiki.physics.wm.edu/AtomicClockOnaBudget/ColgateAJP.pdf)
 
 
