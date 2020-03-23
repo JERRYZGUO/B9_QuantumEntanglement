@@ -10,6 +10,12 @@ This is an overview of the resources for report writing, especially for the fina
 
 [Here](https://weblearn.ox.ac.uk/portal/site/:mpls:physics:teaching:undergrads:exammatters) gives a sample LaTex report with its source code in section "Academic Year 2012-2013."
 
+## LaTex
+
+Some [notes](https://d22izw7byeupn1.cloudfront.net/files/revtex/auguide4-1.pdf) on REVTEX 4.1
+
+
+
 
 
 
