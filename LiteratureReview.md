@@ -26,7 +26,7 @@ A parts [list](http://experimentationlab.berkeley.edu/sites/default/files/images
 
 ### [Reed College/Whitman College](http://people.reed.edu/~beckm/QM/)
 
-Not so much on actual experiment procedures. Has a parts list, and also [explanation](http://people.whitman.edu/~beckmk/QM/updates/updates.html) (under 6/25/09) on using an additional single crystral to compensate for the phase difference.
+A detailed [lab manual](http://people.reed.edu/~beckm/QM/Beck_QM_Manual.pdf). Has a parts list, and also [explanation](http://people.whitman.edu/~beckmk/QM/updates/updates.html) (under 6/25/09) on using an additional single crystral to compensate for the phase difference.
 
 ### University of Chicago
 
