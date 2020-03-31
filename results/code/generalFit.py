@@ -45,8 +45,8 @@ def fit_data(x_data, y_data, errors, func, guess, text):
     y_sim = func(x_sim, a, b, c, d)
     plt.figure(figsize=(6, 4))
     #plt.scatter(angles, det_A, label='Data')
-    plt.errorbar(x_data, y_data, yerr=errors, label='Measured data', fmt = 'none')
-    plt.plot(x_sim, y_sim, label='Fitted function')
+    plt.errorbar(x_data, y_data, yerr=errors, capsize = 2, label='Measured data', fmt = 'none')
+    plt.plot(x_sim, y_sim, label='Fitted cosine square function')
     plt.xlabel(xlabel)
     plt.ylabel(ylabel)
     plt.title(title)
@@ -56,7 +56,7 @@ def fit_data(x_data, y_data, errors, func, guess, text):
 
     return params_A
 
-def fit_data_multi(x_data, y_data_1, y_data_2, errors, func, guess1, guess2, text, ifFindCross = False):
+def fit_data_multi(x_data, y_data_1, y_data_2, y_data_3, errors, func, guess1, guess2, text, ifFindCross = False):
     
     [xlabel, ylabel, title] = text
 
@@ -85,25 +85,60 @@ def fit_data_multi(x_data, y_data_1, y_data_2, errors, func, guess1, guess2, tex
 
     plt.figure(figsize=(6, 4))
     #plt.scatter(angles, det_A, label='Data')
-    plt.errorbar(x_data, y_data_1, yerr=errors, label='Measured data', fmt = 'none')
-    plt.errorbar(x_data, y_data_2, yerr=errors, label='Measured data', fmt = 'none')
+    plt.errorbar(x_data, y_data_1, yerr=errors, capsize = 2, label='Measured HH state', fmt = 'none')
+    plt.errorbar(x_data, y_data_2, yerr=errors, capsize = 2, label='Measured VV state', fmt = 'none')
+    plt.errorbar(x_data, y_data_3, yerr=errors, capsize = 2, label='Measured VH state')
 
-    plt.plot(x_sim, y_1, label='Fitted function')
-    plt.plot(x_sim, y_2, label='Fitted function')
+    plt.plot(x_sim, y_1, label='Fitted HH state')
+    plt.plot(x_sim, y_2, label='Fitted VV state')
 
     plt.xlabel(xlabel)
     plt.ylabel(ylabel)
-    plt.title(title)
+    if title != '':
+        plt.title(title)
     plt.legend(loc='best')
     
     plt.show()
 
     if ifFindCross:
         diff = np.absolute(y_2 - y_1)
-        print(diff)
+#        print(diff)
         min_angle_1 = x_sim[np.argmin(diff[:int(diff.size/2)])]
         min_angle_2 = x_sim[np.argmin(diff)]
 
         return [min_angle_1, min_angle_2]
     else:
         return None
+
+
+
+def fit_data_triple(data, func, text):
+    [xlabel, ylabel, title] = text
+    
+    for i in range(len(data)):
+        [x, y, error, guess] = data[i]
+        
+        params, params_covariance = optimize.curve_fit(func, x, y,
+                                               p0=guess)
+#
+        a, b, c, d = params[0], params[1], params[2], params[3]
+        x_sim = generate_seq(np.amin(x), np.amax(x), x.size * 10)
+        
+        y_sim = func(x_sim, a, b, c, d)
+        
+        data[i].append([x_sim, y_sim])
+    
+    plt.figure(figsize=(6, 4))
+    plt.errorbar(data[0][0], data[0][1], yerr=data[0][2], capsize = 2, label='Measured for case 1', fmt = 'none')
+    plt.errorbar(data[1][0], data[1][1], yerr=data[1][2], capsize = 2, label='Measured for case 2', fmt = 'none')
+    plt.errorbar(data[2][0], data[2][1], yerr=data[2][2], capsize = 2, label='Measured for case 3', fmt = 'none')
+    plt.plot(data[0][-1][0], data[0][-1][1], label='Fitted for case 1')
+    plt.plot(data[1][-1][0], data[1][-1][1], label='Fitted for case 2')
+    plt.plot(data[2][-1][0], data[2][-1][1], label='Fitted for case 3')
+    plt.xlabel(xlabel)
+    plt.ylabel(ylabel)
+    plt.legend(loc='best')
+    
+    plt.show()
+    return None
+    

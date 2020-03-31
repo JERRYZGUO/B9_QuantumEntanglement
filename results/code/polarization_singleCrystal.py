@@ -16,21 +16,32 @@ def cos(x):
 def test_func(x, a, b, c, d):
     
     return a * (cos(x/b * 360 + c) ** 2) + d
-
+def findMax(params):
+    period = params[1]
+    phase = params[2]
+    maxAt = (180 - phase)/360 * period
+    print(params)
+    print(maxAt)
+    return None
 
 
 angles = np.array([i * 10 for i in range(10)])
 errors = np.array([1 for i in range(10)])
 det_A = np.array([2.6, 7.1, 18.3, 30.6, 37.9, 37.1, 28.5, 16.6, 6.4, 2.4])
 guess = [36, 180, 90, 0] # [Amp, Period, Phase Shift, Y bias]
-text = ['x', 'y', 'title']
+text = ['HWP1 angle with vertical direction/degrees', 'Detector 1 photon counts/kHz', '']
 
-print(fit_data(angles, det_A, errors, test_func, guess, text))
+params_A = fit_data(angles, det_A, errors, test_func, guess, text)
+print(findMax(params_A))
+print(params_A)
 print('[Amp, Period, Phase Shift, Y bias]')
 
+text = ['HWP2 angle with vertical direction/degrees', 'Detector 2 photon counts/kHz', '']
 det_B = np.array([3.2, 12.2, 26.7, 39.6, 44.6, 40.4, 28.3, 14.4, 4.4, 3.4])
 guess = [36, 180, 90, 0] # [Amp, Period, Phase Shift, Y bias]
-print(fit_data(angles, det_B, errors, test_func, guess, text))
+params_B = fit_data(angles, det_B, errors, test_func, guess, text)
+print(findMax(params_B))
+print(params_B)
 print('[Amp, Period, Phase Shift, Y bias]')
 
 
