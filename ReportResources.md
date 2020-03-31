@@ -16,7 +16,7 @@ Some [notes](https://d22izw7byeupn1.cloudfront.net/files/revtex/auguide4-1.pdf) 
 
 ## Reference style
 
-Durham University [Physics Department][https://www.dur.ac.uk/physics/students/labs/skills/reportwriting/content/references/].
+Durham University [Physics Department](https://www.dur.ac.uk/physics/students/labs/skills/reportwriting/content/references/).
 
 
 
