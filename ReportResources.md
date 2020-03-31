@@ -14,6 +14,9 @@ This is an overview of the resources for report writing, especially for the fina
 
 Some [notes](https://d22izw7byeupn1.cloudfront.net/files/revtex/auguide4-1.pdf) on REVTEX 4.1
 
+## Reference style
+
+Durham University [Physics Department][https://www.dur.ac.uk/physics/students/labs/skills/reportwriting/content/references/].
 
 
 
